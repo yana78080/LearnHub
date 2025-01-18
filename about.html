@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - LearnHub</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    /* Header Styles */
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px 0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    header .container {
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header .logo img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    header .logo span {
+      font-size: 1.8em;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin-left: 30px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.1em;
+      padding: 8px 0;
+      display: inline-block;
+      position: relative;
+    }
+
+    nav ul li a::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: #f39c12;
+      transition: width 0.3s ease;
+    }
+
+    nav ul li a:hover::after {
+      width: 100%;
+    }
+
+    /* About Section */
+    .about {
+      padding: 100px 40px 40px; /* Adjusted for fixed header */
+      background-color: white;
+      max-width: 900px;
+      margin: 50px auto;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      border-radius: 15px;
+      transition: transform 0.3s ease;
+    }
+
+    .about:hover {
+      transform: translateY(-10px);
+    }
+
+    .about h2 {
+      text-align: center;
+      font-size: 2.8em;
+      color: #333;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+    }
+
+    .about p {
+      font-size: 1.3em;
+      color: #555;
+      line-height: 1.8;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .about h3 {
+      font-size: 2.2em;
+      color: #333;
+      margin-top: 40px;
+    }
+
+    .about ul {
+      font-size: 1.2em;
+      color: #555;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .about ul li {
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    .about .highlight {
+      font-weight: bold;
+      color: #f39c12;
+    }
+
+    .about img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 30px auto;
+      border-radius: 12px;
+    }
+
+    /* Footer Styles */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+    }
+
+    footer a {
+      color: #f39c12;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Button Styles */
+    .join-button {
+      display: inline-block;
+      background-color: #f39c12;
+      color: white;
+      text-decoration: none;
+      font-size: 1.2em;
+      padding: 12px 30px;
+      margin-top: 40px;
+      border-radius: 25px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      text-align: center;
+    }
+
+    .join-button:hover {
+      background-color: #d9780d;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="image/logo1.png" alt="LearnHub Logo">
+        <span>LearnHub</span>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="course-details.html">Courses</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="about">
+    <h2>About LearnHub</h2>
+    <p>LearnHub is an online platform dedicated to providing high-quality courses designed to help you enhance your skills and career. We aim to make education accessible, engaging, and practical for learners around the globe.</p>
+    <img src="image/about-us.jpg" alt="LearnHub Team">
+
+    <h3>Our Mission</h3>
+    <p>Our mission is to empower individuals by offering affordable, accessible, and high-quality education that helps them advance in their careers and improve their personal growth. We believe in making learning available to everyone, no matter their background or location.</p>
+    <img src="image/mission.jpg" alt="Empowering Education">
+
+    <h3>What We Offer</h3>
+    <ul>
+      <li><span class="highlight">Variety of Courses</span> - From technology and design to business and personal development, our courses cover a wide range of subjects.</li>
+      <li><span class="highlight">Expert Instructors</span> - Learn from industry professionals with years of experience and expertise in their fields.</li>
+      <li><span class="highlight">Flexible Learning</span> - Our platform allows you to learn at your own pace, anytime and anywhere, with self-paced courses that fit into your schedule.</li>
+      <li><span class="highlight">Practical Skills</span> - We focus on hands-on learning so you can apply what you’ve learned immediately in real-world scenarios.</li>
+    </ul>
+
+    <h3>Join Our Community</h3>
+    <p>Become part of LearnHub today and start your journey toward success. Whether you're looking to enhance your career, acquire new skills, or explore new opportunities, LearnHub is here to support you every step of the way!</p>
+    <a href="signup.html" class="join-button">Join Now</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 LearnHub. All rights reserved. <a href="privacy.html">Privacy Policy</a></p>
+  </footer>
+</body>
+</html>

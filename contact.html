@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - LearnHub</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+
+    /* Header Styles */
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px 0;
+    }
+
+    header .container {
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header .logo img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    header .logo span {
+      font-size: 1.8em;
+      font-weight: bold;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.1em;
+      padding: 5px;
+    }
+
+    nav ul li a:hover {
+      border-bottom: 2px solid #f39c12;
+    }
+
+    /* Contact Section */
+    .contact {
+      padding: 40px;
+      background-color: white;
+      max-width: 900px;
+      margin: 30px auto;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    .contact h2 {
+      text-align: center;
+      font-size: 2.5em;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .contact p {
+      font-size: 1.2em;
+      color: #555;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    .contact form {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .contact label {
+      font-size: 1.1em;
+      color: #333;
+    }
+
+    .contact input, .contact textarea {
+      padding: 12px;
+      font-size: 1em;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      width: 100%;
+    }
+
+    .contact button {
+      background-color: #f39c12;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1.1em;
+    }
+
+    .contact button:hover {
+      background-color: #e67e22;
+    }
+
+    .contact .info {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .contact .info h3 {
+      font-size: 2em;
+      color: #333;
+    }
+
+    .contact .info p {
+      font-size: 1.2em;
+      color: #555;
+      margin: 5px 0;
+    }
+
+    /* Map Styles */
+    .contact .map {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .contact iframe {
+      width: 100%;
+      height: 400px;
+      border: 0;
+    }
+
+    /* Footer Styles */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: #f39c12;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      header .container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      header .logo {
+        margin-bottom: 10px;
+      }
+
+      nav ul {
+        flex-direction: column;
+      }
+
+      nav ul li {
+        margin: 10px 0;
+      }
+      
+      .contact {
+        padding: 20px;
+        max-width: 100%;
+      }
+
+      .contact iframe {
+        height: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="image/logo1.png" alt="LearnHub Logo">
+        <span>LearnHub</span>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="course-details.html">Courses</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        
+  </header>
+
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <p>If you have any questions, feel free to reach out!</p>
+    
+    <form action="submit_contact.php" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      
+      <button type="submit">Submit</button>
+    </form>
+    
+    <div class="info">
+      <h3>Our Contact Information</h3>
+      <p><strong>Email:</strong> support@learnhub.com</p>
+      <p><strong>Phone:</strong> +123-456-7890</p>
+      <p><strong>Office Address:</strong> 123 LearnHub Street, Learning City, LC 1010</p>
+    </div>
+    
+    <div class="map">
+      <h3>Find Us Here</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=...YOUR_GOOGLE_MAPS_EMBED_URL..." allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 LearnHub. All rights reserved.</p>
+  </footer>
+</body>
+</html>

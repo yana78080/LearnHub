@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Details - LearnHub</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px 0;
+    }
+    header .container {
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header .logo img {
+      height: 40px;
+      margin-right: 10px;
+    }
+    header .logo span {
+      font-size: 1.8em;
+      font-weight: bold;
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      margin-left: 20px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.1em;
+      padding: 5px;
+    }
+    nav ul li a:hover {
+      border-bottom: 2px solid #f39c12;
+    }
+    section.course-details {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 30px;
+      background-color: white;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+    section.course-details h2 {
+      text-align: center;
+      font-size: 2.5em;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    .course-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 20px;
+    }
+    .course-item {
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .course-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+    .course-item h3 {
+      font-size: 1.8em;
+      color: #333;
+      margin-top: 10px;
+    }
+    .course-item p {
+      font-size: 1.2em;
+      color: #555;
+      margin-top: 10px;
+    }
+    .course-item:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+    .course-item:hover img {
+      transform: scale(1.05);
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+    footer a {
+      color: #f39c12;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="image/logo1.png" alt="LearnHub Logo">
+        <span>LearnHub</span>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="course-details.html">Course</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="course-details">
+    <h2>Course Details</h2>
+    <div class="course-list">
+      <div class="course-item">
+        <img src="image/web-development.jpg" alt="Web Development Course">
+        <h3>Web Development</h3>
+        <p>Master HTML, CSS, JavaScript, and frameworks like React or Angular. Build modern websites and applications.</p>
+      </div>
+      <div class="course-item">
+        <img src="image/data-science.jpg" alt="Data Science Course">
+        <h3>Data Science</h3>
+        <p>Learn Python, machine learning, and big data tools for analysis. Understand how to process and visualize data.</p>
+      </div>
+      <div class="course-item">
+        <img src="image/ui-ux-design.jpg" alt="UI/UX Design Course">
+        <h3>UI/UX Design</h3>
+        <p>Create intuitive user experiences using tools like Figma and Adobe XD. Learn design principles and user-centered design.</p>
+      </div>
+      <div class="course-item">
+        <img src="image/mobile-app.jpg" alt="Mobile App Development Course">
+        <h3>Mobile App Development</h3>
+        <p>Learn to build cross-platform mobile applications with React Native or Flutter. Understand mobile UI/UX design.</p>
+      </div>
+      <div class="course-item">
+        <img src="image/e-commerce.jpg" alt="E-Commerce Course">
+        <h3>E-Commerce</h3>
+        <p>Master how to build and manage online stores using platforms like Shopify and WooCommerce. Understand digital marketing strategies.</p>
+      </div>
+      <div class="course-item">
+        <img src="image/cryptocurrency.jpg" alt="Cryptocurrency Course">
+        <h3>Cryptocurrency</h3>
+        <p>Learn about blockchain technology, cryptocurrencies like Bitcoin and Ethereum, and how to trade in the digital currency market.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 LearnHub. All rights reserved.</p>
+  </footer>
+</body>
+</html>
